@@ -8,6 +8,7 @@ def main():
         print("Welcome to the main menu")
         print("Select an option using the corresponding number")
         print("\n\n")
+        print("[0] quit")
         print("[1] nmap scan")
         print("[2] aquatone automated")
         print("[3] sqlmap scan")
@@ -26,22 +27,20 @@ def sqlmap():
         print("[7] return to main menu")
         print("\n")
         choice = input("make a selection: ")
-        if choice = 0 or "0":
+        if choice == 0:
                 system = os.path.isfile("/usr/bin/pacman")
-                if system = True or "True":
+                if system == True:
                         os.system("sudo pacman -S sqlmap")
                         sqlmap()
-                elif system = False or "False":
-                        system2 = os.path.isfile("/usr/bin/apt")
-                        if system2 = True or "True":
+                elif system == False:
+                        system2 == os.path.isfile("/usr/bin/apt")
+                        if system2 == True:
                                 os.system("sudo apt-get install sqlmap")
                                 sqlmap()
-                        elif system2 = False or "False":
-                                system3 = 
-os.path.isfile("/usr/bin/yum")
-                                if system3 = True or "True":
-                                        os.system("sudo yum 
-install sqlmap")
+                        elif system2 == False:
+                                system3 = os.path.isfile("/usr/bin/yum")
+                                if system3 == True:
+                                        os.system("sudo yum install sqlmap")
                                         sqlmap()
 
 
