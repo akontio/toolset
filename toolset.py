@@ -4,8 +4,7 @@ import socket
 
 
 def main():
-        print("{run as sudo/root for all features to work 
-properly}")
+        print("{run as sudo/root for all features to work properly}")
         print("Welcome to the main menu")
         print("Select an option using the corresponding number")
         print("\n\n")
@@ -35,8 +34,7 @@ def sqlmap():
                 elif system = False or "False":
                         system2 = os.path.isfile("/usr/bin/apt")
                         if system2 = True or "True":
-                                os.system("sudo apt-get install 
-sqlmap")
+                                os.system("sudo apt-get install sqlmap")
                                 sqlmap()
                         elif system2 = False or "False":
                                 system3 = 
