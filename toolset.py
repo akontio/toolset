@@ -4,8 +4,7 @@ import socket
 
 
 def main():
-        print("{run as sudo/root for all features to work 
-properly}")
+        print("{run as sudo/root for all features to work properly}")
         print("Welcome to the main menu")
         print("Select an option using the corresponding number")
         print("\n\n")
